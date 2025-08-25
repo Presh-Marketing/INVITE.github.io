@@ -1,292 +1,606 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 HelveticaNeue-Light;}
-{\colortbl;\red255\green255\blue255;\red255\green255\blue255;}
-{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000\c94902;}
-\margl1440\margr1440\vieww37900\viewh18380\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Infrastructure Readiness Score Quiz | INVITE Networks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <div class="header-ribbon"></div>
+            <div class="invite-branding">INVITE Networks</div>
+            <h1>AI Infrastructure Readiness Score</h1>
+            <p><strong>Get your personalized AI infrastructure roadmap in 2 minutes.</strong> See exactly where you stand versus industry benchmarks and discover the specific gaps holding back your AI initiatives.</p>
+            
+            <div style="background: rgba(78, 171, 203, 0.1); padding: 1.5rem; border-radius: 10px; margin-top: 2rem; border-left: 4px solid #4EABCB;">
+                <div style="display: flex; align-items: center; gap: 1rem; font-size: 0.95rem; color: #2c3e94; font-weight: 600;">
+                    <span>✅ Instant results</span>
+                    <span>✅ Personalized recommendations</span>
+                    <span>✅ Industry benchmarking</span>
+                </div>
+            </div>
+        </div>
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="en">\
-<head>\
-    <meta charset="UTF-8">\
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <title>AI Infrastructure Readiness Score Quiz | INVITE Networks</title>\
-    <link rel="preconnect" href="https://fonts.googleapis.com">\
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl264\slmult1\slleading80\pardirnatural\partightenfactor0
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-text" id="progressText">Question 1 of 6</div>
+        </div>
 
-\f1\fs28 \cf2 <link rel="stylesheet" href="style.css">
-\f0\fs24 \cf0 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf0     \
-</head>\
-<body>\
-    <div class="quiz-container">\
-        <div class="quiz-header">\
-            <div class="header-ribbon"></div>\
-            <div class="invite-branding">INVITE Networks</div>\
-            <h1>AI Infrastructure Readiness Score</h1>\
-            <p><strong>Get your personalized AI infrastructure roadmap in 2 minutes.</strong> See exactly where you stand versus industry benchmarks and discover the specific gaps holding back your AI initiatives.</p>\
-            \
-            <div style="background: rgba(78, 171, 203, 0.1); padding: 1.5rem; border-radius: 10px; margin-top: 2rem; border-left: 4px solid #4EABCB;">\
-                <div style="display: flex; align-items: center; gap: 1rem; font-size: 0.95rem; color: #2c3e94; font-weight: 600;">\
-                    <span>\uc0\u9989  Instant results</span>\
-                    <span>\uc0\u9989  Personalized recommendations</span>\
-                    <span>\uc0\u9989  Industry benchmarking</span>\
-                </div>\
-            </div>\
-        </div>\
-\
-        <div class="progress-container">\
-            <div class="progress-bar">\
-                <div class="progress-fill" id="progressFill"></div>\
-            </div>\
-            <div class="progress-text" id="progressText">Question 1 of 6</div>\
-        </div>\
-\
-        <div class="quiz-content">\
-            <!-- Question 1 -->\
-            <div class="question-slide active" data-question="1">\
-                <h2 class="question-title">What's driving your AI infrastructure priorities over the next 12 months?</h2>\
-                <div class="answer-options">\
-                    <div class="answer-option">\
-                        <input type="radio" id="q1a1" name="q1" value="1">\
-                        <label for="q1a1">We're still evaluating AI use cases and ROI</label>\
-                    </div>\
-                    <div class="answer-option">\
-                        <input type="radio" id="q1a2" name="q1" value="2">\
-                        <label for="q1a2">Running pilots or proof-of-concepts</label>\
-                    </div>\
-                    <div class="answer-option">\
-                        <input type="radio" id="q1a3" name="q1" value="3">\
-                        <label for="q1a3">Scaling specific AI use cases (copilots, RAG, analytics)</label>\
-                    </div>\
-                    <div class="answer-option">\
-                        <input type="radio" id="q1a4" name="q1" value="4">\
-                        <label for="q1a4">Enterprise-wide AI transformation initiative</label>\
-                    </div>\
-                    <div class="answer-option">\
-                        <input type="radio" id="q1a5" name="q1" value="5">\
-                        <label for="q1a5">Production AI systems critical to business operations</label>\
-                    </div>\
-                </div>\
-            </div>\
-\
-            <!-- Question 2 -->\
-            <div class="question-slide" data-question="2">\
-                <h2 class="question-title">How would you describe your current GPU and compute strategy?</h2>\
-                <div class="answer-options">\
-                    <div class="answer-option">\
-                        <input type="radio" id="q2a1" name="q2" value="1">\
-                        <label for="q2a1">Shared cloud instances with occasional bottlenecks</label>\
-                    </div>\
-                    <div class="answer-option">\
-                        <input type="radio" id="q2a2" name="q2" value="2">\
-                        <label for="q2a2">Mix of cloud and on-prem with limited GPU access</label>\
-                    </div>\
-                    <div class="answer-option">\
-                        <input type="radio" id="q2a3" name="q2" value="3">\
-                        <label for="q2a3">Dedicated GPU clusters but inconsistent performance</label>\
-                    </div>\
-                    <div class="answer-option">\
-                        <input type="radio" id="q2a4" name="q2" value="4">\
-                        <label for="q2a4">Enterprise-grade compute with some integration gaps</label>\
-                    </div>\
-                    <div class="answer-option">\
-                        <input type="radio" id="q2a5" name="q2" value="5">\
-                        <label for="q2a5">Validated AI infrastructure (Cisco UCS + NVIDIA HGX)</label>\
-                    </div>\
-                </div>\
-            </div>\
-\
-            <!-- Question 3 -->\
-            <div class="question-slide" data-question="3">\
-                <h2 class="question-title">What's your biggest infrastructure pain point with AI workloads?</h2>\
-                <div class="answer-options">\
-                    <div class="answer-option">\
-                        <input type="radio" id="q3a1" name="q3" value="1">\
-                        <label for="q3a1">Network latency and dropped packets during training</label>\
-                    </div>\
-                    <div class="answer-option">\
-                        <input type="radio" id="q3a2" name="q3" value="2">\
-                        <label for="q3a2">Storage I/O bottlenecks for large datasets</label>\
-                    </div>\
-                    <div class="answer-option">\
-                        <input type="radio" id="q3a3" name="q3" value="3">\
-                        <label for="q3a3">Inconsistent performance across environments</label>\
-                    </div>\
-                    <div class="answer-option">\
-                        <input type="radio" id="q3a4" name="q3" value="4">\
-                        <label for="q3a4">Limited observability into AI workload performance</label>\
-                    </div>\
-                    <div class="answer-option">\
-                        <input type="radio" id="q3a5" name="q3" value="5">\
-                        <label for="q3a5">We have fabric-aware, optimized AI networking (Nexus 9000/Spectrum-X)</label>\
-                    </div>\
-                </div>\
-            </div>\
-\
-            <!-- Question 4 -->\
-            <div class="question-slide" data-question="4">\
-                <h2 class="question-title">How confident are you in your AI security posture?</h2>\
-                <div class="answer-options">\
-                    <div class="answer-option">\
-                        <input type="radio" id="q4a1" name="q4" value="1">\
-                        <label for="q4a1">Traditional perimeter security, no AI-specific protections</label>\
-                    </div>\
-                    <div class="answer-option">\
-                        <input type="radio" id="q4a2" name="q4" value="2">\
-                        <label for="q4a2">Basic data governance but worried about model theft</label>\
-                    </div>\
-                    <div class="answer-option">\
-                        <input type="radio" id="q4a3" name="q4" value="3">\
-                        <label for="q4a3">Some AI security tools but not fully integrated</label>\
-                    </div>\
-                    <div class="answer-option">\
-                        <input type="radio" id="q4a4" name="q4" value="4">\
-                        <label for="q4a4">Zero-trust segmentation with AI workload visibility</label>\
-                    </div>\
-                    <div class="answer-option">\
-                        <input type="radio" id="q4a5" name="q4" value="5">\
-                        <label for="q4a5">Full AI-native security (Cisco AI Defense + Hypershield)</label>\
-                    </div>\
-                </div>\
-            </div>\
-\
-            <!-- Question 5 -->\
-            <div class="question-slide" data-question="5">\
-                <h2 class="question-title">What's your team's AI infrastructure expertise level?</h2>\
-                <div class="answer-options">\
-                    <div class="answer-option">\
-                        <input type="radio" id="q5a1" name="q5" value="1">\
-                        <label for="q5a1">Limited\'97we need external expertise for AI infrastructure</label>\
-                    </div>\
-                    <div class="answer-option">\
-                        <input type="radio" id="q5a2" name="q5" value="2">\
-                        <label for="q5a2">Growing knowledge but resource constraints</label>\
-                    </div>\
-                    <div class="answer-option">\
-                        <input type="radio" id="q5a3" name="q5" value="3">\
-                        <label for="q5a3">Solid foundation but need specialized AI ops support</label>\
-                    </div>\
-                    <div class="answer-option">\
-                        <input type="radio" id="q5a4" name="q5" value="4">\
-                        <label for="q5a4">Strong team but prefer to focus on strategic initiatives</label>\
-                    </div>\
-                    <div class="answer-option">\
-                        <input type="radio" id="q5a5" name="q5" value="5">\
-                        <label for="q5a5">Expert-level AI infrastructure team with full lifecycle management</label>\
-                    </div>\
-                </div>\
-            </div>\
-\
-            <!-- Question 6 -->\
-            <div class="question-slide" data-question="6">\
-                <h2 class="question-title">What's your organization's approach to AI infrastructure investment?</h2>\
-                <div class="answer-options">\
-                    <div class="answer-option">\
-                        <input type="radio" id="q6a1" name="q6" value="1">\
-                        <label for="q6a1">Waiting for clearer ROI before major investment</label>\
-                    </div>\
-                    <div class="answer-option">\
-                        <input type="radio" id="q6a2" name="q6" value="2">\
-                        <label for="q6a2">Budget approved but need to prove business value</label>\
-                    </div>\
-                    <div class="answer-option">\
-                        <input type="radio" id="q6a3" name="q6" value="3">\
-                        <label for="q6a3">Ready to invest but need operational expense model</label>\
-                    </div>\
-                    <div class="answer-option">\
-                        <input type="radio" id="q6a4" name="q6" value="4">\
-                        <label for="q6a4">Committed budget with defined AI transformation timeline</label>\
-                    </div>\
-                    <div class="answer-option">\
-                        <input type="radio" id="q6a5" name="q6" value="5">\
-                        <label for="q6a5">AI infrastructure is a strategic priority with executive sponsorship</label>\
-                    </div>\
-                </div>\
-            </div>\
-\
-            <!-- Results -->\
-            <div class="results-container" id="resultsContainer">\
-                <div class="score-circle" id="scoreCircle">0.0</div>\
-                <h2 class="result-title" id="resultTitle"></h2>\
-                <p class="result-description" id="resultDescription"></p>\
-                \
-                <!-- Recommendations Section -->\
-                <div style="background: linear-gradient(180deg, #f3fbff 0%, #ffffff 100%); padding: 2rem; border-radius: 12px; margin: 2rem 0; text-align: left; border: 1px solid #e9ecef;">\
-                    <h3 style="color: #2c3e94; font-size: 1.3rem; font-weight: 700; margin-bottom: 1rem; text-align: center;">Your Personalized AI Infrastructure Roadmap</h3>\
-                    <ul id="recommendationsList" style="list-style: none; padding: 0; margin: 0;">\
-                        <!-- Recommendations will be populated by JavaScript -->\
-                    </ul>\
-                </div>\
-                \
-                <!-- Industry Benchmarking -->\
-                <div style="background: rgba(78, 171, 203, 0.05); padding: 1.5rem; border-radius: 10px; margin: 1.5rem 0; border-left: 4px solid #4EABCB;">\
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">\
-                        <span style="font-size: 1.5rem;">\uc0\u55357 \u56522 </span>\
-                        <h4 style="color: #2c3e94; font-size: 1.1rem; font-weight: 700; margin: 0;">Industry Benchmark</h4>\
-                    </div>\
-                    <p id="benchmarkText" style="margin: 0; color: #666; font-size: 1rem;"></p>\
-                </div>\
-                \
-                <button class="show-form-button" onclick="showLeadForm()">Get My Complete Assessment & Roadmap Session</button>\
-            </div>\
-\
-            <!-- Lead Form -->\
-            <div class="lead-form" id="leadForm">\
-                <h3 class="form-title">Get Your Complete Assessment & Strategy Session</h3>\
-                <p class="form-subtitle">See your full infrastructure analysis, detailed recommendations, and get a 30-minute strategy session with our AI infrastructure experts. We'll review your specific environment and create a customized roadmap.</p>\
-                \
-                <form id="leadCaptureForm" onsubmit="handleFormSubmit(event)">\
-                    <div class="form-grid">\
-                        <div class="form-group">\
-                            <label for="firstName">First Name *</label>\
-                            <input type="text" id="firstName" name="firstName" required>\
-                        </div>\
-                        <div class="form-group">\
-                            <label for="lastName">Last Name *</label>\
-                            <input type="text" id="lastName" name="lastName" required>\
-                        </div>\
-                        <div class="form-group">\
-                            <label for="email">Email Address *</label>\
-                            <input type="email" id="email" name="email" required>\
-                        </div>\
-                        <div class="form-group">\
-                            <label for="company">Company Name *</label>\
-                            <input type="text" id="company" name="company" required>\
-                        </div>\
-                        <div class="form-group">\
-                            <label for="title">Job Title *</label>\
-                            <select id="title" name="title" required>\
-                                <option value="">Select your title</option>\
-                                <option value="CIO">Chief Information Officer (CIO)</option>\
-                                <option value="CTO">Chief Technology Officer (CTO)</option>\
-                                <option value="CISO">Chief Information Security Officer (CISO)</option>\
-                                <option value="Head of AI">Head of AI</option>\
-                                <option value="Director of Infrastructure">Director of Infrastructure</option>\
-                                <option value="IT Director">IT Director</option>\
-                                <option value="VP of Technology">VP of Technology</option>\
-                                <option value="Other">Other</option>\
-                            </select>\
-                        </div>\
-                        <div class="form-group">\
-                            <label for="phone">Phone Number</label>\
-                            <input type="tel" id="phone" name="phone">\
-                        </div>\
-                    </div>\
-                    \
-                    <button type="submit" class="cta-button">Schedule My AI Readiness Session</button>\
-                </form>\
-            </div>\
-        </div>\
-    </div>\
-\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl264\slmult1\slleading80\pardirnatural\partightenfactor0
+        <div class="quiz-content">
+            <!-- Question 1 -->
+            <div class="question-slide active" data-question="1">
+                <h2 class="question-title">What's driving your AI infrastructure priorities over the next 12 months?</h2>
+                <div class="answer-options">
+                    <div class="answer-option">
+                        <input type="radio" id="q1a1" name="q1" value="1">
+                        <label for="q1a1">We're still evaluating AI use cases and ROI</label>
+                    </div>
+                    <div class="answer-option">
+                        <input type="radio" id="q1a2" name="q1" value="2">
+                        <label for="q1a2">Running pilots or proof-of-concepts</label>
+                    </div>
+                    <div class="answer-option">
+                        <input type="radio" id="q1a3" name="q1" value="3">
+                        <label for="q1a3">Scaling specific AI use cases (copilots, RAG, analytics)</label>
+                    </div>
+                    <div class="answer-option">
+                        <input type="radio" id="q1a4" name="q1" value="4">
+                        <label for="q1a4">Enterprise-wide AI transformation initiative</label>
+                    </div>
+                    <div class="answer-option">
+                        <input type="radio" id="q1a5" name="q1" value="5">
+                        <label for="q1a5">Production AI systems critical to business operations</label>
+                    </div>
+                </div>
+            </div>
 
-\f1\fs28 \cf2 <script src="script.js"></script>
-\f0\fs24 \cf0 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf0 </body>\
-</html>}
+            <!-- Question 2 -->
+            <div class="question-slide" data-question="2">
+                <h2 class="question-title">How would you describe your current GPU and compute strategy?</h2>
+                <div class="answer-options">
+                    <div class="answer-option">
+                        <input type="radio" id="q2a1" name="q2" value="1">
+                        <label for="q2a1">Shared cloud instances with occasional bottlenecks</label>
+                    </div>
+                    <div class="answer-option">
+                        <input type="radio" id="q2a2" name="q2" value="2">
+                        <label for="q2a2">Mix of cloud and on-prem with limited GPU access</label>
+                    </div>
+                    <div class="answer-option">
+                        <input type="radio" id="q2a3" name="q2" value="3">
+                        <label for="q2a3">Dedicated GPU clusters but inconsistent performance</label>
+                    </div>
+                    <div class="answer-option">
+                        <input type="radio" id="q2a4" name="q2" value="4">
+                        <label for="q2a4">Enterprise-grade compute with some integration gaps</label>
+                    </div>
+                    <div class="answer-option">
+                        <input type="radio" id="q2a5" name="q2" value="5">
+                        <label for="q2a5">Validated AI infrastructure (Cisco UCS + NVIDIA HGX)</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question-slide" data-question="3">
+                <h2 class="question-title">What's your biggest infrastructure pain point with AI workloads?</h2>
+                <div class="answer-options">
+                    <div class="answer-option">
+                        <input type="radio" id="q3a1" name="q3" value="1">
+                        <label for="q3a1">Network latency and dropped packets during training</label>
+                    </div>
+                    <div class="answer-option">
+                        <input type="radio" id="q3a2" name="q3" value="2">
+                        <label for="q3a2">Storage I/O bottlenecks for large datasets</label>
+                    </div>
+                    <div class="answer-option">
+                        <input type="radio" id="q3a3" name="q3" value="3">
+                        <label for="q3a3">Inconsistent performance across environments</label>
+                    </div>
+                    <div class="answer-option">
+                        <input type="radio" id="q3a4" name="q3" value="4">
+                        <label for="q3a4">Limited observability into AI workload performance</label>
+                    </div>
+                    <div class="answer-option">
+                        <input type="radio" id="q3a5" name="q3" value="5">
+                        <label for="q3a5">We have fabric-aware, optimized AI networking (Nexus 9000/Spectrum-X)</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question-slide" data-question="4">
+                <h2 class="question-title">How confident are you in your AI security posture?</h2>
+                <div class="answer-options">
+                    <div class="answer-option">
+                        <input type="radio" id="q4a1" name="q4" value="1">
+                        <label for="q4a1">Traditional perimeter security, no AI-specific protections</label>
+                    </div>
+                    <div class="answer-option">
+                        <input type="radio" id="q4a2" name="q4" value="2">
+                        <label for="q4a2">Basic data governance but worried about model theft</label>
+                    </div>
+                    <div class="answer-option">
+                        <input type="radio" id="q4a3" name="q4" value="3">
+                        <label for="q4a3">Some AI security tools but not fully integrated</label>
+                    </div>
+                    <div class="answer-option">
+                        <input type="radio" id="q4a4" name="q4" value="4">
+                        <label for="q4a4">Zero-trust segmentation with AI workload visibility</label>
+                    </div>
+                    <div class="answer-option">
+                        <input type="radio" id="q4a5" name="q4" value="5">
+                        <label for="q4a5">Full AI-native security (Cisco AI Defense + Hypershield)</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question-slide" data-question="5">
+                <h2 class="question-title">What's your team's AI infrastructure expertise level?</h2>
+                <div class="answer-options">
+                    <div class="answer-option">
+                        <input type="radio" id="q5a1" name="q5" value="1">
+                        <label for="q5a1">Limited—we need external expertise for AI infrastructure</label>
+                    </div>
+                    <div class="answer-option">
+                        <input type="radio" id="q5a2" name="q5" value="2">
+                        <label for="q5a2">Growing knowledge but resource constraints</label>
+                    </div>
+                    <div class="answer-option">
+                        <input type="radio" id="q5a3" name="q5" value="3">
+                        <label for="q5a3">Solid foundation but need specialized AI ops support</label>
+                    </div>
+                    <div class="answer-option">
+                        <input type="radio" id="q5a4" name="q5" value="4">
+                        <label for="q5a4">Strong team but prefer to focus on strategic initiatives</label>
+                    </div>
+                    <div class="answer-option">
+                        <input type="radio" id="q5a5" name="q5" value="5">
+                        <label for="q5a5">Expert-level AI infrastructure team with full lifecycle management</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question-slide" data-question="6">
+                <h2 class="question-title">What's your organization's approach to AI infrastructure investment?</h2>
+                <div class="answer-options">
+                    <div class="answer-option">
+                        <input type="radio" id="q6a1" name="q6" value="1">
+                        <label for="q6a1">Waiting for clearer ROI before major investment</label>
+                    </div>
+                    <div class="answer-option">
+                        <input type="radio" id="q6a2" name="q6" value="2">
+                        <label for="q6a2">Budget approved but need to prove business value</label>
+                    </div>
+                    <div class="answer-option">
+                        <input type="radio" id="q6a3" name="q6" value="3">
+                        <label for="q6a3">Ready to invest but need operational expense model</label>
+                    </div>
+                    <div class="answer-option">
+                        <input type="radio" id="q6a4" name="q6" value="4">
+                        <label for="q6a4">Committed budget with defined AI transformation timeline</label>
+                    </div>
+                    <div class="answer-option">
+                        <input type="radio" id="q6a5" name="q6" value="5">
+                        <label for="q6a5">AI infrastructure is a strategic priority with executive sponsorship</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results -->
+            <div class="results-container" id="resultsContainer">
+                <div class="score-circle" id="scoreCircle">0.0</div>
+                <h2 class="result-title" id="resultTitle"></h2>
+                <p class="result-description" id="resultDescription"></p>
+                
+                <!-- Recommendations Section -->
+                <div style="background: linear-gradient(180deg, #f3fbff 0%, #ffffff 100%); padding: 2rem; border-radius: 12px; margin: 2rem 0; text-align: left; border: 1px solid #e9ecef;">
+                    <h3 style="color: #2c3e94; font-size: 1.3rem; font-weight: 700; margin-bottom: 1rem; text-align: center;">Your Personalized AI Infrastructure Roadmap</h3>
+                    <ul id="recommendationsList" style="list-style: none; padding: 0; margin: 0;">
+                        <!-- Recommendations will be populated by JavaScript -->
+                    </ul>
+                </div>
+                
+                <!-- Industry Benchmarking -->
+                <div style="background: rgba(78, 171, 203, 0.05); padding: 1.5rem; border-radius: 10px; margin: 1.5rem 0; border-left: 4px solid #4EABCB;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <span style="font-size: 1.5rem;">📊</span>
+                        <h4 style="color: #2c3e94; font-size: 1.1rem; font-weight: 700; margin: 0;">Industry Benchmark</h4>
+                    </div>
+                    <p id="benchmarkText" style="margin: 0; color: #666; font-size: 1rem;"></p>
+                </div>
+                
+                <button class="show-form-button" onclick="showLeadForm()">Get My Complete Assessment & Roadmap Session</button>
+            </div>
+
+            <!-- Lead Form -->
+            <div class="lead-form" id="leadForm">
+                <h3 class="form-title">Get Your Complete Assessment & Strategy Session</h3>
+                <p class="form-subtitle">See your full infrastructure analysis, detailed recommendations, and get a 30-minute strategy session with our AI infrastructure experts. We'll review your specific environment and create a customized roadmap.</p>
+                
+                <form id="leadCaptureForm" onsubmit="handleFormSubmit(event)">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name *</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Job Title *</label>
+                            <select id="title" name="title" required>
+                                <option value="">Select your title</option>
+                                <option value="CIO">Chief Information Officer (CIO)</option>
+                                <option value="CTO">Chief Technology Officer (CTO)</option>
+                                <option value="CISO">Chief Information Security Officer (CISO)</option>
+                                <option value="Head of AI">Head of AI</option>
+                                <option value="Director of Infrastructure">Director of Infrastructure</option>
+                                <option value="IT Director">IT Director</option>
+                                <option value="VP of Technology">VP of Technology</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="cta-button">Schedule My AI Readiness Session</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentQuestion = 1;
+        const totalQuestions = 6;
+        let answers = {};
+
+        // Initialize quiz
+        document.addEventListener('DOMContentLoaded', function() {
+            updateProgress();
+            attachEventListeners();
+        });
+
+        function attachEventListeners() {
+            // Add event listeners to all radio buttons
+            const radioButtons = document.querySelectorAll('input[type="radio"]');
+            radioButtons.forEach(radio => {
+                radio.addEventListener('change', function() {
+                    // Store the answer
+                    answers[this.name] = parseInt(this.value);
+                    
+                    // Auto-advance after a short delay
+                    setTimeout(() => {
+                        if (currentQuestion < totalQuestions) {
+                            nextQuestion();
+                        } else {
+                            showResults();
+                        }
+                    }, 700);
+                });
+            });
+        }
+
+        function nextQuestion() {
+            // Hide current question
+            const currentSlide = document.querySelector('.question-slide.active');
+            currentSlide.style.opacity = '0';
+            currentSlide.style.transform = 'translateY(-20px)';
+            
+            setTimeout(() => {
+                currentSlide.classList.remove('active');
+                
+                // Show next question
+                currentQuestion++;
+                const nextSlide = document.querySelector(`[data-question="${currentQuestion}"]`);
+                if (nextSlide) {
+                    nextSlide.classList.add('active');
+                    updateProgress();
+                }
+            }, 300);
+        }
+
+        function updateProgress() {
+            const progress = (currentQuestion / totalQuestions) * 100;
+            document.getElementById('progressFill').style.width = progress + '%';
+            document.getElementById('progressText').textContent = `Question ${currentQuestion} of ${totalQuestions}`;
+        }
+
+        function calculateScore() {
+            const totalScore = Object.values(answers).reduce((sum, score) => sum + score, 0);
+            return (totalScore / totalQuestions).toFixed(1);
+        }
+
+        function getResultData(score) {
+            const numScore = parseFloat(score);
+            
+            if (numScore >= 0 && numScore <= 2.4) {
+                return {
+                    title: '🔴 Infrastructure Friction (Score: ' + score + '/5.0)',
+                    description: 'You\'re in the bottom 25% of organizations for AI readiness. Key gaps: GPU bottlenecks, network latency, and security vulnerabilities are limiting your AI ROI. Priority: Establish validated architecture foundations.',
+                    className: 'score-not-ready',
+                    recommendations: [
+                        'Start with Cisco UCS C885A + NVIDIA HGX for dedicated AI compute',
+                        'Implement fabric-aware networking (Nexus 9000) to eliminate bottlenecks',
+                        'Deploy AI-native security (Cisco AI Defense) to protect model integrity'
+                    ]
+                };
+            } else if (numScore >= 2.5 && numScore <= 3.4) {
+                return {
+                    title: '🟠 Progress with Gaps (Score: ' + score + '/5.0)',
+                    description: 'You\'re ahead of 40% of organizations but infrastructure bottlenecks are limiting scale. You have foundations but need enterprise-grade optimization to support production AI workloads.',
+                    className: 'score-emerging',
+                    recommendations: [
+                        'Upgrade to integrated AI fabric architecture for consistent performance',
+                        'Add workload observability and automated scaling capabilities',
+                        'Implement managed AI infrastructure to accelerate time-to-value'
+                    ]
+                };
+            } else if (numScore >= 3.5 && numScore <= 4.2) {
+                return {
+                    title: '🟡 Built for Scale (Score: ' + score + '/5.0)',
+                    description: 'You\'re in the top 30% of organizations for AI infrastructure maturity. You have enterprise-grade foundations and understand the importance of validated architecture.',
+                    className: 'score-capable',
+                    recommendations: [
+                        'Optimize east-west traffic patterns for multi-GPU training workloads',
+                        'Add comprehensive AI security posture management',
+                        'Consider managed services to focus internal resources on innovation'
+                    ]
+                };
+            } else {
+                return {
+                    title: '🟢 AI-Ready Excellence (Score: ' + score + '/5.0)',
+                    description: 'You\'re in the top 10% of organizations for AI infrastructure readiness. You understand that enterprise AI requires validated architecture, security-first design, and expert lifecycle management.',
+                    className: 'score-ready',
+                    recommendations: [
+                        'Focus on advanced AI workload optimization and model governance',
+                        'Explore edge AI deployment and hybrid cloud strategies',
+                        'Consider strategic partnership for next-generation AI initiatives'
+                    ]
+                };
+            }
+        }
+
+        function showResults() {
+            // Hide current question and progress
+            const currentSlide = document.querySelector('.question-slide.active');
+            currentSlide.style.opacity = '0';
+            currentSlide.style.transform = 'translateY(-20px)';
+            
+            setTimeout(() => {
+                currentSlide.classList.remove('active');
+                document.querySelector('.progress-container').style.display = 'none';
+                
+                // Calculate and display results
+                const score = calculateScore();
+                const resultData = getResultData(score);
+                
+                document.getElementById('scoreCircle').textContent = score;
+                document.getElementById('scoreCircle').className = `score-circle ${resultData.className}`;
+                document.getElementById('resultTitle').textContent = resultData.title;
+                document.getElementById('resultDescription').textContent = resultData.description;
+                
+                // Populate recommendations
+                const recommendationsList = document.getElementById('recommendationsList');
+                recommendationsList.innerHTML = '';
+                resultData.recommendations.forEach((rec, index) => {
+                    const li = document.createElement('li');
+                    li.style.cssText = `
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 1rem;
+                        margin-bottom: 1rem;
+                        padding: 1rem;
+                        background: white;
+                        border-radius: 8px;
+                        border-left: 3px solid #4EABCB;
+                        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                    `;
+                    li.innerHTML = `
+                        <span style="background: #4EABCB; color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; flex-shrink: 0;">${index + 1}</span>
+                        <span style="color: #333; font-size: 1rem; line-height: 1.5;">${rec}</span>
+                    `;
+                    recommendationsList.appendChild(li);
+                });
+                
+                // Add benchmark text
+                const benchmarkText = document.getElementById('benchmarkText');
+                const numScore = parseFloat(score);
+                if (numScore <= 2.4) {
+                    benchmarkText.textContent = "Based on our assessment of 500+ enterprise AI initiatives, organizations with your profile typically see 40-60% improvement in AI project success rates after implementing validated architecture.";
+                } else if (numScore <= 3.4) {
+                    benchmarkText.textContent = "Organizations at your maturity level typically achieve 2-3x faster AI deployment cycles and 35% better model performance with optimized infrastructure.";
+                } else if (numScore <= 4.2) {
+                    benchmarkText.textContent = "You're ahead of 70% of enterprises in AI infrastructure maturity. Companies at your level typically focus on advanced optimization and strategic AI initiatives.";
+                } else {
+                    benchmarkText.textContent = "You're in the top 10% of enterprises for AI infrastructure readiness. Organizations at your level typically serve as industry benchmarks and case studies.";
+                }
+                
+                // Show results container with animation
+                const resultsContainer = document.getElementById('resultsContainer');
+                resultsContainer.classList.add('active');
+
+                // Store score for potential form submission
+                window.quizScore = score;
+                window.quizAnswers = answers;
+                window.quizResultData = resultData;
+            }, 300);
+        }
+
+        function showLeadForm() {
+            const leadForm = document.getElementById('leadForm');
+            leadForm.classList.add('active');
+            document.querySelector('.show-form-button').style.display = 'none';
+            
+            // Scroll to form smoothly
+            setTimeout(() => {
+                leadForm.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+            }, 100);
+        }
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const leadData = {
+                firstName: formData.get('firstName'),
+                lastName: formData.get('lastName'),
+                email: formData.get('email'),
+                company: formData.get('company'),
+                title: formData.get('title'),
+                phone: formData.get('phone'),
+                quizScore: window.quizScore,
+                quizAnswers: window.quizAnswers,
+                timestamp: new Date().toISOString()
+            };
+
+            // HubSpot integration would go here
+            // Example HubSpot form submission:
+            /*
+            const hubspotFormData = new FormData();
+            hubspotFormData.append('firstname', leadData.firstName);
+            hubspotFormData.append('lastname', leadData.lastName);
+            hubspotFormData.append('email', leadData.email);
+            hubspotFormData.append('company', leadData.company);
+            hubspotFormData.append('jobtitle', leadData.title);
+            hubspotFormData.append('phone', leadData.phone);
+            hubspotFormData.append('ai_readiness_score', leadData.quizScore);
+            
+            fetch('https://api.hsforms.com/submissions/v3/integration/submit/YOUR_PORTAL_ID/YOUR_FORM_ID', {
+                method: 'POST',
+                body: hubspotFormData
+            });
+            */
+
+            console.log('Lead data ready for HubSpot:', leadData);
+            
+            // Analytics tracking would go here
+            // Example Google Analytics 4 tracking:
+            /*
+            gtag('event', 'form_submit', {
+                event_category: 'AI Readiness Quiz',
+                event_label: 'Lead Capture',
+                value: parseFloat(window.quizScore),
+                custom_parameters: {
+                    company: leadData.company,
+                    job_title: leadData.title,
+                    score_category: getResultData(window.quizScore).title
+                }
+            });
+            */
+
+            // Simulate form submission with enhanced UX
+            const submitButton = event.target.querySelector('.cta-button');
+            const originalText = submitButton.textContent;
+            const originalHTML = submitButton.innerHTML;
+            
+            submitButton.innerHTML = `
+                <span style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                    <span style="animation: spin 1s linear infinite; display: inline-block;">⏳</span>
+                    Scheduling Your Session...
+                </span>
+            `;
+            submitButton.disabled = true;
+            submitButton.style.opacity = '0.8';
+
+            // Add spinning animation
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes spin {
+                    from { transform: rotate(0deg); }
+                    to { transform: rotate(360deg); }
+                }
+            `;
+            document.head.appendChild(style);
+
+            setTimeout(() => {
+                // Success state
+                submitButton.innerHTML = `
+                    <span style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                        ✅ Session Scheduled Successfully!
+                    </span>
+                `;
+                submitButton.style.background = 'linear-gradient(135deg, #4CAF50, #45a049)';
+                submitButton.style.opacity = '1';
+                
+                // Show success message
+                const successMessage = document.createElement('div');
+                successMessage.style.cssText = `
+                    background: linear-gradient(135deg, #4CAF50, #45a049);
+                    color: white;
+                    padding: 1.5rem;
+                    border-radius: 10px;
+                    margin-top: 1.5rem;
+                    text-align: center;
+                    font-weight: 600;
+                    box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+                `;
+                successMessage.innerHTML = `
+                    <h4 style="margin: 0 0 0.5rem 0; font-size: 1.3rem;">🎉 Thank You!</h4>
+                    <p style="margin: 0; opacity: 0.95;">Your AI Readiness Session has been scheduled. Our experts will contact you within 24 hours to confirm your appointment and discuss next steps for your infrastructure.</p>
+                `;
+                
+                event.target.appendChild(successMessage);
+                
+                // In a real implementation, redirect to a thank you page after a delay
+                // setTimeout(() => {
+                //     window.location.href = '/thank-you?score=' + window.quizScore;
+                // }, 3000);
+                
+            }, 2500);
+        }
+
+        // Add keyboard navigation for accessibility
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter' && currentQuestion <= totalQuestions) {
+                const activeQuestion = document.querySelector('.question-slide.active');
+                if (activeQuestion) {
+                    const checkedRadio = activeQuestion.querySelector('input[type="radio"]:checked');
+                    if (checkedRadio) {
+                        checkedRadio.dispatchEvent(new Event('change'));
+                    }
+                }
+            }
+        });
+
+        // Add number key shortcuts (1-5) for quick answer selection
+        document.addEventListener('keydown', function(event) {
+            const num = parseInt(event.key);
+            if (num >= 1 && num <= 5 && currentQuestion <= totalQuestions) {
+                const activeQuestion = document.querySelector('.question-slide.active');
+                if (activeQuestion) {
+                    const targetRadio = activeQuestion.querySelector(`input[value="${num}"]`);
+                    if (targetRadio) {
+                        targetRadio.checked = true;
+                        targetRadio.dispatchEvent(new Event('change'));
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
